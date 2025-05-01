@@ -45,8 +45,8 @@ if __name__ == '__main__':
     from argparse import ArgumentParser
     
     parser = ArgumentParser()
-    parser.add_argument('--log_path', type=str, required=True, help='Path to the log file')
-    parser.add_argument('--project', type=str, default='huawei_test')
+    parser.add_argument('--log_path', '-l', type=str, required=True, help='Path to the log file')
+    parser.add_argument('--project', '-p', type=str, default='huawei_test')
     args = parser.parse_args()
     
     log_path = Path(args.log_path)
